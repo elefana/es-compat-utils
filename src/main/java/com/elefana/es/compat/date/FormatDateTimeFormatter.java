@@ -16,7 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-package com.elefana.es.compat;
+package com.elefana.es.compat.date;
 
 import java.util.Locale;
 import java.util.Objects;

@@ -37,6 +37,7 @@ repositories {
 
 ext {
 	jodaVersion = '2.9.9'
+	nativesLoaderVersion = '1.0.0'
 }
 
 sourceCompatibility = 1.7
@@ -58,6 +59,7 @@ artifacts {
 
 dependencies {
 	compile "joda-time:joda-time:$jodaVersion"
+	compile "org.mini2Dx:natives-loader:$nativesLoaderVersion"
 	
 	testCompile 'junit:junit:4.11'
 	testCompile "org.jmock:jmock-junit4:2.5.1"
