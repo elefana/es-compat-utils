@@ -48,6 +48,50 @@ public class OsStats {
 			return null;
 		}
 	}
+	
+	public String getOsName() {
+		try {
+			if(MX_BEAN == null) {
+				return "Unknown";
+			}
+			return MX_BEAN.getName();
+		} catch (Exception e) {
+			return "Unknown";
+		}
+	}
+	
+	public String getOsArch() {
+		try {
+			if(MX_BEAN == null) {
+				return "Unknown";
+			}
+			return MX_BEAN.getArch();
+		} catch (Exception e) {
+			return "Unknown";
+		}
+	}
+	
+	public String getOsVersion() {
+		try {
+			if(MX_BEAN == null) {
+				return "Unknown";
+			}
+			return MX_BEAN.getVersion();
+		} catch (Exception e) {
+			return "Unknown";
+		}
+	}
+	
+	public int getAvailableProcessors() {
+		try {
+			if(MX_BEAN == null) {
+				return -1;
+			}
+			return MX_BEAN.getAvailableProcessors();
+		} catch (Exception e) {
+			return -1;
+		}
+	}
 
 	public long getFreePhysicalMemorySize() {
 		if (FREE_PHYSICAL_MEMORY_SIZE == null) {
