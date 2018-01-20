@@ -1,0 +1,5 @@
+[1.0.1]
+- Additional OS information available through OsStats
+
+[1.0.0]
+- Initial release with Joda, DateMath and OsStats utils
